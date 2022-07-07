@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <section class="container">
+        <form id="my-form">
+            <h1>Add User</h1>
+            <div class="msg"></div>
+            <div>
+                <label for="name">Name:</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input class="input" type="text" id="email">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input class="input" type="number" id="age">
+            </div>
+            <input id="bttbt" class="btn" type="submit" value="Submit">
+        </form>
+  
+        <table>
+            <thead>
+                <tr>
+                    <th>Name <i class="fa-solid fa-arrow-down-a-z" onclick="filterName()"></i></th>
+                    <th>Mail <i class="fa-solid fa-arrow-down-a-z" onclick="filterMail()"></i></th>
+                    <th>Age <i class="fa-solid fa-arrow-down-a-z" onclick="filterAge()"></i></th>
+                </tr>
+            </thead>
+          <tbody id="users">
+              
+          </tbody> 
+        </table>
+    </section>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
